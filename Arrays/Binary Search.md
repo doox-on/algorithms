@@ -35,7 +35,8 @@ int binarySearch(int* arr, int size, int target) {
 
 ## 🔍 Related LeetCode Problems
 
-- Leetcode 704: Binary Search
+- [Leetcode 704: Binary Search](https://leetcode.com/problems/binary-search/description/) [2025-05-28]
+- [Leetcode 1: Two Sum](https://leetcode.com/problems/two-sum/description/)
 - Leetcode 35: Search Insert Position
 - Leetcode 278: First Bad Version
 
