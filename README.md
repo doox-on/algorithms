@@ -6,13 +6,6 @@ Each folder covers a specific domain or subject area.
 
 ---
 
-# 🧠 Algorithm & Data Structure Study Index
-
-This is a curated list of fundamental algorithm and data structure problems, organized by topic.  
-Each section includes common problems often asked in technical interviews and coding assessments.
-
----
-
 ## 📚 Arrays
 
 - [x] Binary Search
