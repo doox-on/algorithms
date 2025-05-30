@@ -24,7 +24,7 @@ int binarySearch(int* arr, int size, int target) {
 ```
 
 
-## [Leetcode 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/) [2025-05-28]
+## [Leetcode 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/) [2025-05-30]
 
 ```c
 int searchInsert(int* nums, int numsSize, int target) {
@@ -53,6 +53,34 @@ int searchInsert(int* nums, int numsSize, int target) {
 -  where the value is eaqual or greater than the target.
 -  so if there's tatget in the array -> the target index
 -  if not -> where it shold be
+
+## [Leetcode 69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/?envType=problem-list-v2&envId=binary-search) [2025-05-30]
+
+```c
+int mySqrt(int x) {
+    
+    int left = 0;
+    int right = x/2 + 1;
+    if (x == 0) {
+        return 0;
+    } else if ( x == 1) {
+        return 1;
+    }
+    while (left <= right) {
+        int mid = (left + right)/2;
+
+        if (mid > x / mid) {
+            right = mid -1;
+        } else {
+            left = mid+1;
+        }
+    }
+    return left-1;
+}
+```
+- Must check overflow.
+- Use division instead of multiplication. 
+- sqrt(x) <= x/2+1 is always true. 
 
 ---
 
