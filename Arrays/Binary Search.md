@@ -8,7 +8,7 @@
 
 ---
 
-## 🔁 Iterative Version (while left <= right)
+## [Leetcode 704. Binary Search](https://leetcode.com/problems/binary-search/description/) [2025-05-28]
 
 ```c
 int binarySearch(int* arr, int size, int target) {
@@ -23,6 +23,37 @@ int binarySearch(int* arr, int size, int target) {
 }
 ```
 
+
+## [Leetcode 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/) [2025-05-28]
+
+```c
+int searchInsert(int* nums, int numsSize, int target) {
+    int start = 0;
+    int end = numsSize-1;
+    int mid = 0;
+
+    while (start <= end) {
+        mid = (start + end)/2;
+
+        if (target == nums[mid]) {
+            return mid;
+        } else if (target < nums[mid]) {
+            end = mid - 1;
+        } else {
+            start = mid + 1;
+        }
+    }
+    
+    return start;
+
+}
+```
+
+- Since the loop end condition is when start > end, the position of the start at that moment is
+-  where the value is eaqual or greater than the target.
+-  so if there's tatget in the array -> the target index
+-  if not -> where it shold be
+
 ---
 
 ## 🧠 Common Pitfalls
@@ -35,7 +66,7 @@ int binarySearch(int* arr, int size, int target) {
 
 ## 🔍 Related LeetCode Problems
 
-- [Leetcode 704: Binary Search](https://leetcode.com/problems/binary-search/description/) [2025-05-28]
+- [Leetcode 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) [2025-05-30]
 - [Leetcode 1: Two Sum](https://leetcode.com/problems/two-sum/description/)
 - Leetcode 35: Search Insert Position
 - Leetcode 278: First Bad Version
