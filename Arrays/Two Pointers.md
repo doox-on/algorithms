@@ -6,7 +6,7 @@
 - One pointer starts at the **beginning**, the other at the **end**, and both move toward each other based on some condition.
 
 ---
-## [Leetcode 28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=two-pointers) [2025-05-28]
+## [Leetcode 28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=two-pointers) [2025-06-02]
 
 ```c
 #include <string.h>
